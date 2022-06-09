@@ -1,0 +1,46 @@
+.nav-top {
+  background-color: $green;
+  padding: 7px 0;
+  @include potrait {
+    display: none;
+  }
+  a {
+    color: $white;
+    font-size: 13px;
+  }
+  p {
+    color: $white;
+    font-size: 14px;
+  }
+}
+.navbar {
+  .active {
+    color: $red !important;
+  }
+  .nav-link {
+    color: $nav-link-color;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0px 20px !important;
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $green !important;
+  z-index: 9999;
+  padding-top: 0px !important;
+  .nav-link {
+    color: $white !important;
+  }
+  .active {
+    color: $red !important;
+  }
+  .navbar-brand {
+    img {
+      width: 100px;
+    }
+  }
+}

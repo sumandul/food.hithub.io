@@ -1,0 +1,141 @@
+.owl-dots {
+  color: $red !important;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  @include potrait {
+    left: 20% !important;
+  }
+  // background-color: red;
+  .active {
+    background-color: $red;
+  }
+  .owl-dot {
+    background-color: $red !important;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 3px;
+  }
+}
+
+.slider {
+  p {
+    color: $red;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 14px;
+    @include media('<=desktop') {
+      font-size: 23px !important;
+    }
+  }
+}
+.owl-prev {
+  background-color: $ligtgreen !important;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  top: 18%;
+  position: absolute;
+  left: -48px;
+  @include media('<=desktop') {
+    display: none;
+  }
+}
+.owl-next {
+  background-color: $ligtgreen !important;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  top: 18%;
+  position: absolute;
+  right: 23px;
+  @include media('<=desktop') {
+    display: none;
+  }
+}
+.owl-item {
+  margin-right: 10px !important;
+}
+.item {
+  // background-color: red;
+}
+.img-container {
+  width: 73%;
+  @include potrait {
+    width: 100% !important;
+  }
+}
+.cake-slider {
+  .owl-dots {
+    color: $red !important;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: -55px;
+    @include potrait {
+      left: 20% !important;
+    }
+  }
+  .owl-prev {
+    background-color: $ligtgreen !important;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    top: 33%;
+    position: absolute;
+    left: -48px;
+    @include media('<=desktop') {
+      display: none;
+    }
+  }
+  .owl-next {
+    background-color: $ligtgreen !important;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    top: 33%;
+    position: absolute;
+    right: -42px;
+    @include media('<=desktop') {
+      display: none;
+    }
+  }
+  .owl-item {
+    padding: 10px;
+  }
+  .item {
+    padding: 20px 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+  }
+  .cake-content {
+    h6 {
+      color: $nav-link-color;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    P {
+      margin-top: 3px;
+      font-size: 14px;
+      font-weight: 200;
+      color: $nav-link-color;
+    }
+    .price {
+      p {
+        color: $green;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .cart-box {
+        background-color: $red !important;
+        padding: 5px 8px;
+        border-radius: 50%;
+        i {
+          color: $white;
+        }
+      }
+    }
+  }
+}
